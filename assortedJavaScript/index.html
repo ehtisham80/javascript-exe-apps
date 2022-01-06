@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assorted JavaScript Test</title>
+        <!-- Thank you => Mats Hultquist -->
+    </head>
+
+    <body>
+        <h3 style="color: red;">Lexicon Calculator by Mats Hultquist</h3>
+        <!-- Display window for the calculator. Just something big and that looks lika a calculator -->
+        <p style="border-radius: 15px; padding-right: 15px; padding-left: 15px; background-color: lightgray; color: darkgray; text-align: right; width: 75%; font-size: 72px; border: 3px solid black;"
+            id="Result">0</p>
+        <!-- The two firleds (A & B) that is used to get the two variables to work with -->
+        <p>A:<input type="text" width="25%" id="NumA"
+                title="Input value A">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B:<input type="text" width="25%"
+                id="NumB" placeholder="Type a number here"></p>
+        <!-- A bunch of buttons with different matematical operations on them, they each call a different function -->
+        <!-- the title tag is to get the tool-tip text when you hover youre mouse over the object (small yellow box with text in it) -->
+        <button onclick="addNumbers()" style="font-size: 32; font-weight: bold; min-width: 50px;"
+            title="A + B">+</button>
+        <button onclick="subtractNumbers()" style="font-size: 32; font-weight: bold; min-width: 50px;"
+            title="A - B">-</button>
+        <button onclick="multiplyNumbers()" style="font-size: 32; font-weight: bold; min-width: 50px;"
+            title="A * B">*</button>
+        <button onclick="divideNumbers()" style="font-size: 32; font-weight: bold; min-width: 50px;"
+            title="A / B">÷</button>
+        <button onclick="modulaNumbers()" style="font-size: 32; font-weight: bold; min-width: 50px;"
+            title="A modula B">%</button>
+        <button onclick="powerToNumbers()" style="font-size: 32; font-weight: bold; min-width: 50px;"
+            title="A ** B">X<span style="font-size: small; vertical-align: text-top;">Y</span></button>
+        
+        <script src="app.js"></script>
+    </body>
+</html>
