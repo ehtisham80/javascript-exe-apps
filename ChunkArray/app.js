@@ -1,0 +1,5 @@
+const ChunkArray = (arr, size) =>
+  Array.from({ length: Math.ceil(arr.length / size) }, (v, i) =>
+    arr.slice(i * size, i * size + size)
+  );
+console.log(ChunkArray([1, 2, 3, 4, 5], 2));
